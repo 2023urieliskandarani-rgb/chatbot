@@ -1,0 +1,82 @@
+{
+  "inicio": {
+    "texto": "¡Hola! ✨ Bienvenida/o a tu chatbot de moda personal. Para empezar a armar tus looks, ¿cuál es tu nombre?",
+    "requiereInput": true,
+    "tipoValidacion": "texto",
+    "placeholder": "Tu nombre aquí...",
+    "guardarEleccion": true,
+    "siguiente": "pregunta_estilo"
+  },
+  "pregunta_estilo": {
+    "texto": "¡Un gusto saludarte! 🛍️ ¿Qué estilo de ropa te define mejor?",
+    "opciones": [
+      {
+        "texto": "👟 Urbano / Streetwear",
+        "guardarEstilo": "Urbano",
+        "siguiente": "menu_principal"
+      },
+      {
+        "texto": "👗 Elegante / Casual Chic",
+        "guardarEstilo": "Elegante",
+        "siguiente": "menu_principal"
+      },
+      {
+        "texto": "🎨 Bohemio / Vintage",
+        "guardarEstilo": "Vintage",
+        "siguiente": "menu_principal"
+      }
+    ]
+  },
+  "menu_principal": {
+    "texto": "Sabiendo que te encanta el estilo {estilo}, ¿qué te interesa consultar hoy?",
+    "opciones": [
+      {
+        "texto": "💡 ¿Qué te interesa de la moda?",
+        "siguiente": "interes_moda"
+      },
+      {
+        "texto": "✨ ¿Cuál es el nuevo artículo de moda?",
+        "siguiente": "nuevo_articulo"
+      },
+      {
+        "texto": "❌ Terminar conversación",
+        "siguiente": "fin"
+      }
+    ]
+  },
+  "interes_moda": {
+    "texto": "Recomendación exclusiva: Para un look {estilo} perfecto, combiná prendas oversize en tonos neutros con un accesorio colorido que destaque. ¡Menos es más!",
+    "opciones": [
+      {
+        "texto": "🔙 Volver al menú principal",
+        "siguiente": "menu_principal"
+      },
+      {
+        "texto": "❌ Terminar conversación",
+        "siguiente": "fin"
+      }
+    ]
+  },
+  "nuevo_articulo": {
+    "texto": "Recomendación del momento: El artículo tendencia de esta temporada son los blazers oversized en colores pastel y los championes retro con plataformas.",
+    "opciones": [
+      {
+        "texto": "🔙 Volver al menú principal",
+        "siguiente": "menu_principal"
+      },
+      {
+        "texto": "❌ Terminar conversación",
+        "siguiente": "fin"
+      }
+    ]
+  },
+  "fin": {
+    "texto": "¡Gracias por conversar sobre moda! 💖 Guardé tu preferencia {estilo} para la próxima sesión. ¡Nos vemos pronto!",
+    "opciones": [
+      {
+        "texto": "🔄 Reiniciar conversación",
+        "siguiente": "inicio"
+      }
+    ]
+  }
+}
